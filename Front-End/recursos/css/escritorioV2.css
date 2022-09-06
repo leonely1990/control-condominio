@@ -1,8 +1,12 @@
 #contenido{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+#tabla-apartamentos{
+    margin-bottom: 25px;
 }
 
 #tabla-apartamentos > table th, td, caption{
@@ -25,4 +29,80 @@
 
 #tabla-apartamentos > table tbody tr:nth-child(odd){
     background-color: #e4e4e4;
+}
+
+#cabecera-secundaria{
+    display: flex;
+    align-self: stretch;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.contenedor-indicadores{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicador{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #7c7c7c;
+    margin: 10px;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.Iusuarios span::before{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    content: url("../icon-regular/user.svg");
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.Iapartamentos span::before{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    content: url("../icon-regular/building.svg");
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.Ifondos span::before{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    content: url("../icon-regular/money-bill-1.svg");
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#anio{
+    padding: 5px;
+    background-color: inherit;
+    border: none;
+    background-color: #a3ce9f;
+}
+
+#buscar{
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
 }

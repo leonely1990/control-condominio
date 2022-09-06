@@ -74,9 +74,12 @@ footer{
     flex-grow: 1;
 }
 
+#barra-lateral{
+    background-color: var(--fondo-principal);
+}
+
 #menu{
     list-style: none;
-    background-color: var(--fondo-principal);
     padding: 15px 0px;
 }
 
