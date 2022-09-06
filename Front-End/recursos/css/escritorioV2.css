@@ -1,0 +1,28 @@
+#contenido{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla-apartamentos > table th, td, caption{
+    padding: 7px;
+}
+
+#tabla-apartamentos > table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#tabla-apartamentos > table > thead{
+    color: #f5f5f5;
+    background-color: #383838;
+}
+
+#tabla-apartamentos > table thead th:nth-child(15){
+    background-color: #b90000;
+}
+
+#tabla-apartamentos > table tbody tr:nth-child(odd){
+    background-color: #e4e4e4;
+}
