@@ -1,0 +1,138 @@
+:root{
+    --fondo-principal: #e7ffff;
+    --fondo-principal-oscuro: #c5dddd;
+    --color-texto: #5a5a5a;
+    --color-texto-oscuro: #000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Maquetado Principal */
+
+body{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+header{
+    grid-area: 1/1/2/12;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fondo-principal);
+}
+
+main{
+    grid-area: 2/1/3/12;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer{
+    grid-area: 3/1/4/12;
+    padding: 10px;
+    background-color: var(--fondo-principal);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fin de Maquetado Principal */
+
+/* Seccion de Cabecera */
+
+#menu-user a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: small;
+}
+
+#menu-user a::before{
+    content: url("../icon-regular/user.svg");
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#titulo-cabecera h3{
+    margin-left: 25px;
+}
+
+/* Seccion de menu */
+
+#contenido{
+    flex-grow: 1;
+}
+
+#menu{
+    list-style: none;
+    background-color: var(--fondo-principal);
+    padding: 15px 0px;
+}
+
+.boton-menu{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.contenedor-boton:not(.active) .boton-menu:hover{
+    color: var(--color-texto-oscuro);
+    background-color: var(--fondo-principal-oscuro);
+}
+
+#menu li a::before{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    filter: invert(34%) sepia(1%) saturate(1474%) hue-rotate(346deg) brightness(95%) contrast(84%);
+}
+
+#menu li:hover:not(.active) a::before{
+    filter: invert(43%) sepia(33%) saturate(5716%) hue-rotate(167deg) brightness(104%) contrast(101%);
+}
+
+.active{
+    color: var(--color-texto-oscuro);
+    background-color: var(--fondo-principal-oscuro);
+}
+
+#menu li:nth-child(1) a::before{   
+    content: url("../icon-regular/newspaper.svg");   
+}
+
+#menu li:nth-child(2) a::before{
+    content: url("../icon-regular/bookmark.svg");
+}
+
+#menu li:nth-child(3) a::before{
+    content: url("../icon-regular/building.svg");
+}
+
+#menu li:nth-child(4) a::before{
+    content: url("../icon-regular/user.svg");
+}
+
+#menu li:nth-child(5) a::before{
+    content: url("../icon-regular/rectangle-list.svg");
+}
+
+/* Seccion del Contenido */
+
+#contenido{
+    padding: 10px;
+}

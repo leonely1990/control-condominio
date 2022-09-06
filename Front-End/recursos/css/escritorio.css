@@ -1,0 +1,192 @@
+<<<<<<< HEAD
+header h3::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url("../icon/tv.svg");
+    height: 25px;
+    width: 25px;
+    margin-right: 3px;
+}
+
+=======
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+/* ## Marcadores ## */
+
+#content-marcadores{
+    grid-area: 1/1/2/12;
+    display: flex;
+    flex-wrap: wrap;
+<<<<<<< HEAD
+    justify-content: center;
+=======
+    justify-content: space-around;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    align-items: center;
+    margin: 25px;
+}
+
+<<<<<<< HEAD
+.content-marcador{
+    margin: 0px 10px;
+}
+
+=======
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+.content-marcador > span{
+    display: flex;
+    justify-content: center;
+    background-color: #297EE3;
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    padding: 7px;
+<<<<<<< HEAD
+    color: #ffffff;
+=======
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+}
+
+/* ## Fin Marcadores ## */
+
+/* ## Apartamentos ## */
+
+#contador-apartamentos{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+    font-size: 1.5em;
+=======
+    font-size: 2.5em;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    background-color: #32D2D6;
+    padding: 10px 15px;
+}
+
+#contador-apartamentos::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+<<<<<<< HEAD
+    width: 25px;
+    height: 25px;
+=======
+    width: 45px;
+    height: 45px;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    content: url("../icon/house.svg");
+    margin-right: 15px;
+}
+
+/* ## Fin Apartamentos ## */
+
+/* ## Cobro Fecha ## */
+
+#fecha-cobro{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+    font-size: 1.5em;
+=======
+    font-size: 2.5em;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    background-color: #32D2D6;
+    padding: 10px 15px;
+}
+
+#fecha-cobro::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+<<<<<<< HEAD
+    width: 25px;
+    height: 25px;
+=======
+    width: 45px;
+    height: 45px;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    content: url("../icon/calendar-days.svg");
+    margin-right: 15px;
+}
+
+/* ## Fin Cobro Fecha ## */
+
+/* ## Fondos ## */
+
+#fondos{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+    font-size: 1.5em;
+=======
+    font-size: 2.5em;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    background-color: #32D2D6;
+    padding: 10px 15px;
+}
+
+#fondos::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+<<<<<<< HEAD
+    width: 25px;
+    height: 25px;
+=======
+    width: 45px;
+    height: 45px;
+>>>>>>> 95367e84b0792f19f4e3dc3ef9fb5953befbb455
+    content: url("../icon/sack-dollar.svg");
+    margin-right: 15px;
+}
+
+/* ## Fin Fondos ## */
+
+/* ## Tabla ## */
+
+#content-tabla{
+    grid-area: 2/1/3/12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Cabecera de la Tabla*/
+
+#content-tabla table{
+    border-collapse: collapse;
+}
+
+#content-tabla caption{
+    background-color: #d6d6d6;
+    padding: 10px;
+}
+
+#content-tabla th{
+    padding: 10px;
+    color: #e3ffff;
+    background-color: #061d1d;
+}
+
+#content-tabla tr:nth-child(even){
+    background-color: #c7c7c7;
+}
+
+#content-tabla tr:nth-child(odd){
+    background-color: #e7e7e7;
+}
+
+#content-tabla tr{
+    text-align: center;
+}
+
+#content-tabla td{
+    padding: 10px;
+}
