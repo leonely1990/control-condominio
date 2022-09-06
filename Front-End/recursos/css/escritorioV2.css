@@ -71,6 +71,7 @@ span{
     width: 25px;
     height: 25px;
     margin-right: 10px;
+    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
 }
 
 .Iapartamentos span::before{
@@ -81,6 +82,7 @@ span{
     width: 25px;
     height: 25px;
     margin-right: 10px;
+    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
 }
 
 .Ifondos span::before{
@@ -91,6 +93,7 @@ span{
     width: 25px;
     height: 25px;
     margin-right: 10px;
+    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
 }
 
 #anio{
