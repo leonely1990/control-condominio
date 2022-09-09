@@ -46,6 +46,33 @@
       <!-- Contenido -->
       <section id="contenido">
 
+        <!-- Popups -->
+        <!-- Formulario para crear Propuestas -->
+        <div class="popups">
+
+          <form action="" method="post" name="propuestaForm">
+
+            <caption>
+              <h1 class="titulo-form">Crear Propuesta</h1>
+            </caption>
+
+            <div class="campos">
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre de Propuesta">
+              <input type="number" name="dias" id="dias" value="0" placeholder="Duracion en dias">
+              <input type="text" name="presupuesto" id="presupuesto" placeholder="Presupuesto">
+              <input type="file" name="subirPresupuesto" id="subirPresupuesto" accept=".pdf">
+              <textarea name="detalle" id="detalle" cols="30" rows="10" placeholder="Detalle aqui su propuesta"></textarea>
+            </div>
+
+            <div class="botones">
+              <button type="submit">Crear</button>
+
+              <button id="cerrar-popups" type="button">Cerrar</button>
+            </div>
+
+          </form>
+        </div>
+
         <!-- Cabecera secundaria -->
         <div id="cabecera-secundaria">
           <button id="crear-propuesta">Crear Propuesta</button>
@@ -271,6 +298,7 @@
     <footer>
       <h4>AVYS &copy; 2022</h4>
     </footer>
+    <script src="../recursos/js/asambleaV2.js"></script>
     <script src="../recursos/js/allV2.js"></script>
   </body>
 </html>

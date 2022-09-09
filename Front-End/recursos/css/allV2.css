@@ -133,9 +133,3 @@ footer{
 #menu li:nth-child(5) a::before{
     content: url("../icon-regular/rectangle-list.svg");
 }
-
-/* Seccion del Contenido */
-
-#contenido{
-    padding: 10px;
-}
