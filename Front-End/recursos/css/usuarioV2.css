@@ -86,7 +86,7 @@ abbr{
     height: 100%;
     background-color: #7c7c7ca4;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-start;
 }
@@ -94,5 +94,78 @@ abbr{
 #correo{
     background-color: #f3f3f3;
     padding: 10px;
-    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#correo{
+    position: relative;
+}
+
+#correo > *{
+    margin: 10px;
+}
+
+#seccion-notificacion,
+#seccion-constancia,
+#seccion-aviso,
+#seccion-personalizado{
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion-personalizado form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion-notificacion form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="text"], textarea, select{
+    padding: 5px;
+    background-color: inherit;
+    border: none;
+    border: 1px solid #a3a3a3;
+    outline: none;
+    margin: 5px;
+}
+
+[type="submit"]{
+    border: none;
+    background-color: #a3a3a3;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+[type="submit"]:hover{
+    background-color: #008000;
+}
+
+#cerrar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

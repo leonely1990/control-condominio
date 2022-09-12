@@ -54,7 +54,9 @@
           
           <div id="correo">
 
-            <section id="seleccion-tipo-correo">
+            <h1>Enviar Correo</h1>
+
+            <section id="seleccion-tipo">
               <select name="tipo-correo" id="tipo-correo">
                 <option value="notificacion">Notificacion</option>
                 <option value="constancia">Constancia</option>
@@ -63,7 +65,58 @@
               </select>
             </section>
 
+            <!-- Seccion segun elemento Select -->
+            <section id="seccion-notificacion">
+              <form action="" method="post">
+                <form action="" method="post">
+                  <div>
+                    <label for="tipo-notificacion">Tipo de Notificacion:</label>
+                    <select name="tipo-notificacion" id="tipo-notificacion">
+                      <option value="cobro">Cobro</option>
+                    </select>
+                    <select name="anio" id="anio-notificacion">
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                    </select>
+                    <select name="mes" id="mes-notificacion">
+                      <option value="enero">Enero</option>
+                      <option value="febrero">Febrero</option>
+                      <option value="marzo">Marzo</option>
+                      <option value="abril">Abril</option>
+                      <option value="mayo">Mayo</option>
+                      <option value="junio">Junio</option>
+                      <option value="julio">Julio</option>
+                      <option value="agosto">Agosto</option>
+                      <option value="septiembre">Septiembre</option>
+                      <option value="octubre">Octubre</option>
+                      <option value="noviembre">Noviembre</option>
+                      <option value="diciembre">Diciembre</option>
+                    </select>
+                  </div>
+                  <input type="submit" value="Enviar">
+                </form>
+              </form>
+            </section>
 
+            <section id="seccion-constancia">
+              <form action="" method="post">
+                <label for="constancia-pago">Enviar Constancia de pago:</label>
+                <input type="submit" value="Enviar">
+              </form>
+            </section>
+
+            <section id="seccion-aviso">
+              <h4>Aviso</h4>
+            </section>
+
+            <section id="seccion-personalizado">
+              <form action="" method="post">
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+              </form>
+            </section>
 
           </div>
 
@@ -187,5 +240,6 @@
       <h4>AVYS &copy; 2022</h4>
     </footer>
     <script src="../recursos/js/allV2.js"></script>
+    <script src="../recursos/js/usuario.js"></script>
   </body>
 </html>
