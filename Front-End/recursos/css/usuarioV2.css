@@ -1,3 +1,7 @@
+#contenido{
+    position: relative;
+}
+
 .fichas-usuarios{
     display: flex;
     flex-flow: row wrap;
@@ -73,6 +77,8 @@ abbr{
     color: #008000
 }
 
+/* #### Popups #### */
+
 .popups{
     position: absolute;
     z-index: 1;
@@ -83,4 +89,10 @@ abbr{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+#correo{
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: auto;
 }
