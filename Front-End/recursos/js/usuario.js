@@ -1,4 +1,8 @@
 const tipo = document.getElementById("tipo-correo");
+const enviar_correo = document.getElementById("enviar-correo");
+const cerrar = document.getElementById("cerrar").addEventListener("click", () => {
+    document.getElementsByClassName("popups")[0].style.display = "none";
+});
 
 document.getElementById("seccion-"+tipo.value).style.display = "flex";
 
@@ -12,4 +16,8 @@ tipo.addEventListener("change", () => {
         }
     }
 
+});
+
+enviar_correo.addEventListener("click", () => {
+    document.getElementsByClassName("popups")[0].style.display = "flex";
 });
