@@ -1,16 +1,11 @@
-#contenido{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
+/* Tabla de condominio */
 
 #tabla-apartamentos{
     margin-bottom: 25px;
 }
 
 #tabla-apartamentos > table th, td, caption{
-    padding: 7px;
+    padding: 5px;
 }
 
 #tabla-apartamentos > table{
@@ -33,10 +28,14 @@
 
 #cabecera-secundaria{
     display: flex;
-    align-self: stretch;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
     margin-bottom: 35px;
+}
+
+#seleccion-anio{
+    flex-grow: 1;
 }
 
 .contenedor-indicadores{
@@ -44,6 +43,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .indicador{

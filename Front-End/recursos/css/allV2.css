@@ -75,6 +75,11 @@ footer{
 
 #contenido{
     flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    position: relative;
 }
 
 #barra-lateral{
@@ -135,4 +140,16 @@ footer{
 
 #menu li:nth-child(5) a::before{
     content: url("../icon-regular/rectangle-list.svg");
+}
+
+@media (max-width: 874px) {
+    main{
+        flex-flow: column nowrap;
+    }
+
+    #menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }

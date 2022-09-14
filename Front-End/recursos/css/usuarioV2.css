@@ -1,7 +1,3 @@
-#contenido{
-    position: relative;
-}
-
 .fichas-usuarios{
     display: flex;
     flex-flow: row wrap;
