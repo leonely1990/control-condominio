@@ -134,8 +134,7 @@
 .lista{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: space-evenly;
 }
 
 .caja-propuesta{
@@ -145,6 +144,11 @@
     margin: 5px;
     flex-grow: 1;
     min-width: 280px;
+    max-width: 300px;
+}
+
+button{
+    margin: 5px 1px;
 }
 
 button img{
