@@ -1,6 +1,9 @@
 /* Tabla de condominio */
 
 #tabla-apartamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 25px;
 }
 
@@ -36,6 +39,9 @@
 
 #seleccion-anio{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-indicadores{
@@ -89,7 +95,7 @@ span{
     display: flex;
     align-items: center;
     justify-self: center;
-    content: url("../icon-regular/money-bill-1.svg");
+    content: url("../icon-regular/sack-dollar.svg");
     width: 25px;
     height: 25px;
     margin-right: 10px;

@@ -123,7 +123,7 @@ footer{
 }
 
 #menu li:nth-child(1) a::before{   
-    content: url("../icon-regular/newspaper.svg");   
+    content: url("../icon-regular/home-blank.svg");   
 }
 
 #menu li:nth-child(2) a::before{
