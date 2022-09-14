@@ -14,6 +14,7 @@
 #tabla-apartamentos > table{
     text-align: center;
     border-collapse: collapse;
+    box-shadow: 0px 0px 3px #383838;
 }
 
 #tabla-apartamentos > table > thead{
@@ -34,7 +35,7 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
-    margin-bottom: 35px;
+    margin: 35px 0px;
 }
 
 #seleccion-anio{
@@ -48,28 +49,45 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-grow: 1;
 }
 
 .indicador{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 1px 1px 2px #383838;
+    margin: 5px 5px;
+}
+
+.indicador img{
+    width: 50px;
+    height: 50px;
     padding: 10px;
-    box-shadow: 1px 1px 2px #7c7c7c;
-    margin: 10px;
 }
 
-span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0px;
+.indicador span{
+    flex-grow: 1;
+    text-align: center;
+    margin: auto;
+    padding: 5px 15px;
 }
 
-.Iusuarios span::before{
+.Iusuarios img{
+    background-color: #eb6a86;
+}
+
+.Iapartamentos img{
+    background-color: #95bcf7;
+}
+
+.Ifondos img{
+    background-color: #a3ce9f;
+}
+
+/* .Iusuarios span::before{
     display: flex;
     align-items: center;
     justify-self: center;
@@ -100,7 +118,7 @@ span{
     height: 25px;
     margin-right: 10px;
     filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
-}
+} */
 
 #anio{
     padding: 5px;
