@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../recursos/css/allV2.css" />
-    <link rel="stylesheet" href="../recursos/css/asambleaV2.css">
-    <title>Asamblea</title>
-  </head>
-  <body>
 
-    <!-- Cabecera de Pagina -->
-    <header>
-      <section id="titulo-cabecera">
-        <h3>Titulo</h3>
-      </section>
-      <section id="menu-user">
-        <a href="">Mi Cuenta</a>
-      </section>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../recursos/css/allV2.css" />
+  <link rel="stylesheet" href="../recursos/css/asambleaV2.css">
+  <title>Asamblea</title>
+</head>
 
-    <!-- Contenido principal -->
-    <main>
-      <!-- Barra lateral de navegacion -->
-      <aside id="barra-lateral">
+<body>
 
-        <ul id="menu">
-          <li class="contenedor-boton">
-            <a href="escritorio.html" class="boton-menu">Escritorio</a>
-          </li>
-          <li class="contenedor-boton">
-            <a href="asamblea.html" class="boton-menu">Asamblea</a>
-          </li>
-          <li class="contenedor-boton">
-            <a href="apartamento.html" class="boton-menu">Residencia</a>
-          </li>
-          <li class="contenedor-boton">
-            <a href="usuario.html" class="boton-menu">Usuario</a>
-          </li>
-        </ul>
-      </aside>
-      <!-- Contenido -->
-      <section id="contenido">
+  <!-- Cabecera de Pagina -->
+  <header>
+    <section id="titulo-cabecera">
+      <h3>Titulo</h3>
+    </section>
+    <section id="menu-user">
+      <a href="">Mi Cuenta</a>
+    </section>
+  </header>
 
-        <!-- Popups -->
-        <!-- Formulario para crear Propuestas -->
-        <div class="popups">
+  <!-- Contenido principal -->
+  <main>
+    <!-- Barra lateral de navegacion -->
+    <aside id="barra-lateral">
 
-          <form action="" method="post" name="propuestaForm">
+      <ul id="menu">
+        <li class="contenedor-boton">
+          <a href="escritorio.html" class="boton-menu">Escritorio</a>
+        </li>
+        <li class="contenedor-boton">
+          <a href="asamblea.html" class="boton-menu">Asamblea</a>
+        </li>
+        <li class="contenedor-boton">
+          <a href="apartamento.html" class="boton-menu">Residencia</a>
+        </li>
+        <li class="contenedor-boton">
+          <a href="usuario.html" class="boton-menu">Usuario</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- Contenido -->
+    <section id="contenido">
 
-            <caption>
-              <h1 class="titulo-form">Crear Propuesta</h1>
-            </caption>
+      <!-- Popups -->
+      <!-- Formulario para crear Propuestas -->
+      <div class="popups">
 
-            <div class="campos">
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre de Propuesta">
-              <input type="number" name="dias" id="dias" value="0" placeholder="Duracion en dias">
-              <input type="text" name="presupuesto" id="presupuesto" placeholder="Presupuesto">
-              <input type="file" name="subirPresupuesto" id="subirPresupuesto" accept=".pdf">
-              <textarea name="detalle" id="detalle" cols="30" rows="10" placeholder="Detalle aqui su propuesta"></textarea>
-            </div>
+        <form action="" method="post" name="propuestaForm">
 
-            <div class="botones">
-              <button type="submit">Crear</button>
+          <caption>
+            <h1 class="titulo-form">Crear Propuesta</h1>
+          </caption>
 
-              <button id="cerrar-popups" type="button">Cerrar</button>
-            </div>
+          <div class="campos">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre de Propuesta">
+            <input type="number" name="dias" id="dias" value="0" placeholder="Duracion en dias">
+            <input type="text" name="presupuesto" id="presupuesto" placeholder="Presupuesto">
+            <input type="file" name="subirPresupuesto" id="subirPresupuesto" accept=".pdf">
+            <textarea name="detalle" id="detalle" cols="30" rows="10"
+              placeholder="Detalle aqui su propuesta"></textarea>
+          </div>
 
-          </form>
-        </div>
+          <div class="botones">
+            <button type="submit">Crear</button>
 
-        <!-- Cabecera secundaria -->
-        <div id="cabecera-secundaria">
-          <button id="crear-propuesta">Crear Propuesta</button>
-          <button id="eliminar-propuesta">Eliminar Propuesta</button>
-        </div>
+            <button id="cerrar-popups" type="button">Cerrar</button>
+          </div>
 
+        </form>
+      </div>
+
+      <!-- Cabecera secundaria -->
+      <div id="cabecera-secundaria">
+        <button id="crear-propuesta">Crear Propuesta</button>
+        <button id="eliminar-propuesta">Eliminar Propuesta</button>
+      </div>
+
+      <!-- Contenedor de listas -->
+      <div class="content-listas">
         <!-- Lista de Propuestas Seleccionadas -->
         <div id="lista-propuestas-seleccionadas">
 
@@ -84,11 +89,12 @@
           </div>
 
           <div class="lista">
+
             <article class="caja-propuesta">
               <div class="titulo-propuesta">
                 <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -100,15 +106,13 @@
                 <br>
                 Votos: 12
               </div>
-  
+
             </article>
           </div>
 
         </div>
 
         <!-- Lista de Propuestas sin Seleccionar -->
-        
-
         <div id="lista-propuestas">
 
           <div class="titulo-lista">
@@ -121,7 +125,7 @@
               <div class="titulo-propuesta">
                 <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -133,23 +137,24 @@
                 <br>
                 Votos: 0
               </div>
-  
+
               <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
+                <button class="verder">
+                  <img src="../recursos/svgs/regular/square-check.svg" alt="check">
                 </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
+
+                <button class="rojo">
+                  <img src="../recursos/svgs/regular/square-xmark.svg" alt="">
                 </button>
               </div>
-  
+
             </article>
-  
+
             <article class="caja-propuesta">
               <div class="titulo-propuesta">
-                <h5>#1</h5>
+                <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -161,23 +166,24 @@
                 <br>
                 Votos: 0
               </div>
-  
+
               <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
+                <button class="verder">
+                  <img src="../recursos/svgs/regular/square-check.svg" alt="check">
                 </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
+
+                <button class="rojo">
+                  <img src="../recursos/svgs/regular/square-xmark.svg" alt="">
                 </button>
               </div>
-  
+
             </article>
-  
+
             <article class="caja-propuesta">
               <div class="titulo-propuesta">
-                <h5>#1</h5>
+                <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -189,23 +195,24 @@
                 <br>
                 Votos: 0
               </div>
-  
+
               <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
+                <button class="verder">
+                  <img src="../recursos/svgs/regular/square-check.svg" alt="check">
                 </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
+
+                <button class="rojo">
+                  <img src="../recursos/svgs/regular/square-xmark.svg" alt="">
                 </button>
               </div>
-  
+
             </article>
-  
+
             <article class="caja-propuesta">
               <div class="titulo-propuesta">
-                <h5>#1</h5>
+                <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -217,23 +224,24 @@
                 <br>
                 Votos: 0
               </div>
-  
+
               <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
+                <button class="verder">
+                  <img src="../recursos/svgs/regular/square-check.svg" alt="check">
                 </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
+
+                <button class="rojo">
+                  <img src="../recursos/svgs/regular/square-xmark.svg" alt="">
                 </button>
               </div>
-  
+
             </article>
-  
+
             <article class="caja-propuesta">
               <div class="titulo-propuesta">
-                <h5>#1</h5>
+                <h5>#2</h5>
               </div>
-              
+
               <div class="contenido-propuesta">
                 Nombre: Arreglar Porton
                 <br>
@@ -245,57 +253,43 @@
                 <br>
                 Votos: 0
               </div>
-  
+
               <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
-                </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
-                </button>
+                  <button class="verder">
+                    <img src="../recursos/svgs/regular/square-check.svg" alt="check">
+                  </button>
+
+                  <button class="rojo">
+                    <img src="../recursos/svgs/regular/square-xmark.svg" alt="">
+                  </button>
               </div>
-  
+
             </article>
-  
-            <article class="caja-propuesta">
-              <div class="titulo-propuesta">
-                <h5>#1</h5>
-              </div>
-              
-              <div class="contenido-propuesta">
-                Nombre: Arreglar Porton
-                <br>
-                Fecha de Creacion: 06/09/2022
-                <br>
-                Duracion Estimada: 10 Dias
-                <br>
-                Presupuesto: 250 $
-                <br>
-                Votos: 0
-              </div>
-  
-              <div class="botones-propuesta">
-                <button id="positivo">
-                  <img src="../recursos/icon-regular/thumbs-up.svg" alt="incono-pulgar-arriba" width="25px" height="25px">
-                </button>
-                <button id="negativo">
-                  <img src="../recursos/icon-regular/thumbs-down.svg" alt="incono-pulgar-abajo" width="25px" height="25px">
-                </button>
-              </div>
-  
-            </article>
+
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
+            <article class="caja-propuesta"></article>
 
           </div>
 
         </div>
-      </section>
-    </main>
+      </div>
 
-    <!-- Pie de Pagina -->
-    <footer>
-      <h4>AVYS &copy; 2022</h4>
-    </footer>
-    <script src="../recursos/js/asambleaV2.js"></script>
-    <script src="../recursos/js/allV2.js"></script>
-  </body>
+    </section>
+  </main>
+
+  <!-- Pie de Pagina -->
+  <footer>
+    <h4>AVYS &copy; 2022</h4>
+  </footer>
+  <script src="../recursos/js/asambleaV2.js"></script>
+  <script src="../recursos/js/allV2.js"></script>
+</body>
+
 </html>
