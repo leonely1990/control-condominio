@@ -52,9 +52,9 @@
         <!-- Enviar Correo -->
         <div class="popups">
           
-          <div id="correo">
+          <div id="correo" class="prueba">
 
-            <button id="cerrar">X</button>
+            <button class="cerrar">X</button>
 
             <h1>Enviar Correo</h1>
 
@@ -75,6 +75,7 @@
                     <label for="tipo-notificacion">Tipo de Notificacion:</label>
                     <select name="tipo-notificacion" id="tipo-notificacion">
                       <option value="cobro">Cobro</option>
+                      <option value="pago">Pago</option>
                     </select>
                     <select name="anio" id="anio-notificacion">
                       <option value="2020">2020</option>
@@ -122,6 +123,81 @@
 
           </div>
 
+          <div id="pagos" class="prueba">
+            <button class="cerrar">X</button>
+            <h1>Tabla de Condominio</h1>
+            <div>
+              <table>
+                <thead>
+                  <th>Anio</th>
+                  <th>Ene</th>
+                  <th>Feb</th>
+                  <th>Mar</th>
+                  <th>Abr</th>
+                  <th>May</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Ago</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                  <th>Dic</th>
+                  <th>Total</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>2021</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>2022</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
         </div>
 
         <article class="fichas-usuarios">
@@ -156,7 +232,7 @@
                 </abbr>
               </button>
 
-              <button class="boton-usuario">
+              <button class="boton-usuario" id="verPagos">
                 <abbr title="Ver Pagos">
                   <img src="../recursos/icon-regular/eye.svg" alt="">
                 </abbr>
