@@ -3,28 +3,24 @@
 #cabecera-secundaria{
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
     padding: 10px;
 }
 
 #crear-propuesta{
+    flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
+    justify-content: flex-start;
     background-color: #7cd3e9;
     border: none;
     cursor: pointer;
-    margin-left: 15px;
+    max-width: 190px;
 }
 
-#crear-propuesta::before{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: url("../icon-regular/square-plus.svg");
-    width: 25px;
-    height: 25px;
-    margin-right: 7px;
+#crear-propuesta #eliminar-propuesta, img{
+    margin: 10px;
 }
 
 #crear-propuesta:hover{
@@ -32,28 +28,22 @@
 }
 
 #eliminar-propuesta{
+    flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
+    justify-content: flex-start;
     background-color: #e97c7c;
     border: none;
     cursor: pointer;
-    margin-left: 15px;
-}
-
-#eliminar-propuesta::before{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: url("../icon-regular/square-minus.svg");
-    width: 25px;
-    height: 25px;
-    margin-right: 7px;
+    max-width: 190px;
 }
 
 #eliminar-propuesta:hover{
     background-color: #da3f3f;
+}
+
+#eliminar-propuesta, #crear-propuesta{
+    margin: 5px;
 }
 
 .popups{
@@ -134,7 +124,8 @@
 .lista{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .caja-propuesta{
@@ -143,16 +134,35 @@
     box-shadow: 1px 1px 3px #7a7a7a;
     margin: 5px;
     flex-grow: 1;
-    min-width: 280px;
+    min-width: 300px;
     max-width: 300px;
-}
-
-button{
-    margin: 5px 1px;
 }
 
 button img{
     width: 25px;
     height: 25px;
     display: flex;
+}
+
+@media (max-width: 874px) {
+    #cabecera-secundaria{
+        
+    }
+
+    .lista{
+        justify-content: center;
+    }
+
+    #eliminar-propuesta, #crear-propuesta{
+        max-width: none;
+        min-width: none;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 420px) {
+    #cabecera-secundaria{
+        flex-flow: column wrap;
+        justify-content: center;
+    }
 }
