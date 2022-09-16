@@ -87,39 +87,6 @@
     background-color: #a3ce9f;
 }
 
-/* .Iusuarios span::before{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    content: url("../icon-regular/user.svg");
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
-}
-
-.Iapartamentos span::before{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    content: url("../icon-regular/building.svg");
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
-}
-
-.Ifondos span::before{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    content: url("../icon-regular/sack-dollar.svg");
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    filter: invert(29%) sepia(0%) saturate(253%) hue-rotate(197deg) brightness(93%) contrast(77%);
-} */
-
 #anio{
     padding: 5px;
     background-color: inherit;
