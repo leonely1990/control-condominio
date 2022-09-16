@@ -147,7 +147,7 @@ footer{
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 590px) {
     #barra-lateral{
         display: none;
     }
@@ -169,5 +169,9 @@ footer{
 
     #titulo-cabecera h3{
         margin: 0;
+    }
+
+    #menu-user{
+        display: none;
     }
 }
