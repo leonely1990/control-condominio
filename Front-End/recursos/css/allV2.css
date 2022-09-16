@@ -147,13 +147,12 @@ footer{
     }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 650px) {
     #barra-lateral{
         display: none;
     }
-
-    #menu-user{
-        display: none;
+    #titulo-cabecera{
+        align-self: stretch;
     }
 
     header{
