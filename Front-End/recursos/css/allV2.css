@@ -135,6 +135,37 @@ footer{
     filter: var(--color-filtro);
 }
 
+/* Menu de movil */
+
+#menu-movil{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    transition: left 1s ease;
+}
+
+#menu-movil_ul{
+    background-color: #e7ffff;
+}
+
+#menu-movil__img{
+    width: 25px;
+    height: 25px;
+    align-self: flex-start;
+}
+
+.menu-active{
+    left: 0px !important;
+}
+
+.menu-deactive{
+    left: -150px !important;
+}
+
 @media (max-width: 874px) {
     main{
         flex-flow: column nowrap;
@@ -158,6 +189,7 @@ footer{
     header{
         align-items: none;
         align-content: center;
+        flex-flow: row-reverse nowrap;
     }
 
     #titulo-cabecera{
