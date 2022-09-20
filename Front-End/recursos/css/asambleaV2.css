@@ -19,7 +19,7 @@
     max-width: 190px;
 }
 
-#crear-propuesta #eliminar-propuesta, img{
+#crear-propuesta img, #eliminar-propuesta img{
     margin: 10px;
 }
 
