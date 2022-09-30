@@ -6,10 +6,10 @@
 }
 
 #contenido h3{
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0px;
+    padding: 10px 0px;
     text-align: center;
-    background-image: linear-gradient(to right, #f1f1f1,#ebffeb, #f1f1f1);
+    background-image: linear-gradient(to right, #f1f1f1,#e5e8fd, #f1f1f1);
 }
 
 article{
