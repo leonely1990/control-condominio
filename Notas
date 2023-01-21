@@ -1,0 +1,109 @@
+-----------------------------------------------
+Dependencias
+-----------------------------------------------
+
+<dependencies>
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>${jakartaee}</version>
+            <scope>provided</scope>
+        </dependency>
+        
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core-jakarta</artifactId>
+            <version>5.6.14.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+
+-----------------------------------------------
+persistence.xml
+-----------------------------------------------
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+version="3.0">
+
+    <persistence-unit name="Condominio">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>ve.com.avys.domain.Residencia</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/hibernate"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="postgres"/>
+            
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value=""/>
+            
+        </properties>
+    </persistence-unit>
+ 
+</persistence>
+
+
+
+CREATE TABLE sgc.residencia(
+	id_residencia SERIAL PRIMARY KEY,
+	nombre VARCHAR(255) UNIQUE,
+	direccion VARCHAR(255)
+);
+
+CREATE TABLE sgc.propietario(
+	id_propietario SERIAL PRIMARY KEY,
+	nombre VARCHAR(255),
+	apellido VARCHAR(255),
+	cedula BIGINT UNIQUE,
+	f_nacimiento DATE,
+	telefono BIGINT
+);
+
+CREATE TABLE sgc.departamento(
+	id_departamento SERIAL PRIMARY KEY,
+	numero VARCHAR(4) UNIQUE,
+	id_residencia INT REFERENCES sgc.residencia (id_residencia) UNIQUE,
+	id_propietario INT REFERENCES sgc.propietario (id_propietario) UNIQUE
+);
+
+CREATE TABLE sgc.evento(
+	id_evento SERIAL PRIMARY KEY,
+	nombre VARCHAR(255),
+	detalle TEXT,
+	f_creacion DATE,
+	id_departamento INT REFERENCES sgc.departamento (id_departamento)
+);
+
+//////////////////////////////////////////
+Para reinicar las tablas
+
+TRUNCATE TABLE nombre_de_la_tabla RESTART IDENTITY;
+
+
+Initial Context:
+
+- GlassFish: org.jboss.naming.remote.client.InitialContextFactory
+
+com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl
+
+- WildFly: org.wildfly.naming.client.WildFlyInitialContextFactory
